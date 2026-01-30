@@ -1288,12 +1288,12 @@
     text-align: center;
   }
   .text h1 {
-    font-size: 30px;
-    padding-top: 20px;
+    font-size: 26px;
+    padding-top: 40px;
   }
-  .text p {
+  /* .text p {
     text-align: justify;
-  }
+  } */
   .text .text2 hr {
     margin-bottom: 0;
   }

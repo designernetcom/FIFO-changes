@@ -27,10 +27,7 @@
   <link rel="stylesheet" href="css/default.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/responsive.css" />
-  <link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
 </head>
 
@@ -39,7 +36,7 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-light">
       <div class="container">
         <!-- LOGO -->
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center" href="./index.html">
           <img src="img/logo/fifo-new-logo.png" width="60" class="mr-2" />
           <span class="font-weight-bold">FD GROUP</span>
         </a>
@@ -59,7 +56,7 @@
             <!-- DROPDOWN -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" data-toggle="dropdown">
-                About
+                About Us
               </a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="about.html">Company Background</a>
@@ -72,14 +69,15 @@
             <li class="nav-item">
               <a class="nav-link" href="./fifo-engineering/index.html">FIFO Engineering</a>
             </li>
-
+            <li class="nav-item">
+              <a class="nav-link" href="./3d-polymer/index.html">FIFO
+                Polymers</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="./fifo-industries/index.html">FIFO Industries</a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="./3d-polymer/index.html">3D Polymer</a>
-            </li>
+
 
             <li class="nav-item">
               <a class="nav-link" href="our-market.html">Our Market</a>
@@ -93,13 +91,10 @@
       </div>
     </nav>
   </header>
-  <section class="hero-section">
-    <video class="hero-video" autoplay muted loop playsinline>
-      <source src="img/Video Project_1 (1).mp4" type="video/mp4" />
-    </video>
 
 
-  </section>
+
+
 
 
 
@@ -107,6 +102,59 @@
 
   <main>
 
+    <!-- <section class="hero-section">
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/PB0JMISAO70?autoplay=1&mute=1&loop=1&playlist=PB0JMISAO70&controls=0&showinfo=0&modestbranding=1&rel=0"
+          frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </section>
+
+
+    <style>
+      .hero-section {
+        position: relative !important;
+        width: 100%;
+        height: 120vh;
+       
+      }
+
+      @media (max-width: 920px)
+      {
+        .hero-section{
+           height: 26vh;
+        } 
+      }
+      .video-wrapper {
+        position: absolute !important;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+      }
+
+      .video-wrapper iframe {
+        width: 100vw;
+        height: 56.25vw;
+       
+      }
+
+
+     
+    </style> -->
+
+
+
+
+      <section class="hero-section">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="img/Video Project_1 (1).mp4" type="video/mp4" />
+    </video>
+
+
+  </section>
 
     <style>
       /* * {
@@ -115,23 +163,18 @@
             box-sizing: border-box;
         } */
 
-      body {
-            /* font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; */
-            background: white;
-            /* color: #1a1a1a; */
-            /* overflow-x: hidden; */
-        }
+    
 
-      .about-section { 
-        
+      .about-section {
+
         max-width: 1300px;
         margin: 0 auto;
         padding: 15px 40px;
-        position: relative;
+        position: relative !important;
       }
 
       .floating-element {
-        position: absolute;
+        position: absolute !important;
         pointer-events: none;
         z-index: 0;
       }
@@ -141,7 +184,7 @@
         height: 400px;
         background: radial-gradient(circle, rgba(9, 41, 104, 0.08), transparent);
         top: 10%;
-        right: -100px;
+        /* right: -100px; */
         border-radius: 50%;
         animation: float 8s ease-in-out infinite;
       }
@@ -218,7 +261,7 @@
         display: inline-block !important;
       }
 
-      .section-title .highlight::after {
+      /* .section-title .highlight::after {
         content: '';
         position: absolute;
         bottom: 0;
@@ -228,7 +271,7 @@
         background: linear-gradient(135deg, rgba(9, 41, 104, 0.3), rgba(21, 101, 192, 0.3));
         transform: skewY(-2deg);
         z-index: -1;
-      }
+      } */
 
       .section-description {
         font-size: 19px;
@@ -331,7 +374,7 @@
         align-items: center;
         justify-content: center;
         font-size: 28px;
-        box-shadow: 0 10px 30px rgba(9, 41, 104, 0.3);
+        /* box-shadow: 0 10px 30px rgba(9, 41, 104, 0.3); */
         transition: all 0.4s ease;
         position: relative;
         z-index: 1;
@@ -341,7 +384,7 @@
       .feature-icon img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
         border-radius: 18px;
       }
 
@@ -374,7 +417,7 @@
       .feature-content h3 {
         font-size: 23px;
         font-weight: 600;
-        color: #1a1a1a;
+        color: #201B31;
         margin-bottom: 10px;
         transition: color 0.3s ease;
       }
@@ -455,7 +498,7 @@
         height: 250px;
         /* background: linear-gradient(135deg, #092968, #1565c0); */
         top: -80px;
-        right: -80px;
+        /* right: -80px; */
       }
 
       .decoration-2 {
@@ -606,9 +649,9 @@
         }
 
         .feature-icon {
-          width: 48px;
-          height: 48px;
-          min-width: 48px;
+          width: 68px;
+          height: 68px;
+          min-width: 68px;
         }
 
         .feature-content h3 {
@@ -640,9 +683,9 @@
       <div class="floating-element float-2"></div>
 
       <div class="section-header">
-        <div class="section-badge">
+        <!-- <div class="section-badge">
           <span>✦</span> Quality That Never Compromises
-        </div>
+        </div> -->
         <h1 class="section-title">Innovating Moulding Excellence <span class="highlight">Since 2015</span></h1>
       </div>
 
@@ -650,9 +693,7 @@
         <div class="content-left">
           <div class="feature-item">
             <div class="feature-icon">
-              <img
-                src="https://thumbs.dreamstime.com/b/baking-mold-four-round-forms-baking-muffins-cupcakes-baking-mold-four-round-forms-baking-delicious-muffins-341408448.jpg"
-                alt="Precision Mould">
+              <img src="./landing-page-img/icons/expert.png" alt="Precision Mould">
             </div>
             <div class="feature-content">
               <h3>End-to-End Expertise</h3>
@@ -663,7 +704,7 @@
 
           <div class="feature-item">
             <div class="feature-icon">
-              <img src="https://cdn-icons-png.flaticon.com/512/10103/10103326.png" alt="Quality Delivery">
+              <img src="landing-page-img/icons/badge.png" alt="Quality Delivery">
             </div>
             <div class="feature-content">
               <h3>Quality You Can Trust</h3>
@@ -673,11 +714,14 @@
 
           <div class="feature-item">
             <div class="feature-icon">
-              <img src="https://cdn-icons-png.flaticon.com/512/2421/2421304.png" alt="Industry Leadership">
+              <img src="landing-page-img/icons/engineering.png" style="height: 60px;"
+                alt="Industry Leadership">
             </div>
             <div class="feature-content">
-              <h3>Innovation at Scale</h3>
-              <p>Powered by CNC, VMC, and modern injection molding systems across two plants.
+              <h3>Engineering Excellence</h3>
+              <p>Delivering consistent quality through modern
+                injection molding and precision machining across our
+                3-plant infrastructure.
               </p>
             </div>
           </div>
@@ -687,8 +731,7 @@
           <div class="image-decoration decoration-1"></div>
           <div class="image-decoration decoration-2"></div>
           <div class="image-wrapper">
-            <img src="https://t4.ftcdn.net/jpg/05/00/91/81/360_F_500918189_xsBOBFpzqSekBwrIQf2e2A7jwwS5Ntqh.jpg"
-              alt="Team collaboration" class="main-image">
+            <img src="./landing-page-img/123123.jpg" alt="Team collaboration" class="main-image">
           </div>
         </div>
       </div>
@@ -719,7 +762,8 @@
 
       .section-header {
         text-align: center;
-        margin-bottom: 60px;
+        margin-bottom: 0px;
+        padding-top: 40px;
         animation: fadeInDown 1s ease;
       }
 
@@ -844,7 +888,7 @@
       }
 
       .vision-card .card-title::after {
-         background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
       }
 
       .mission-card:hover .card-title::after,
@@ -901,7 +945,7 @@
       }
 
       .vision-card .feature-list li::before {
-             background: linear-gradient(135deg, #172563 0%, #3f0f6e 100%);
+        background: linear-gradient(135deg, #172563 0%, #3f0f6e 100%);
 
       }
 
@@ -1079,7 +1123,7 @@
           <!-- Mission Card -->
           <div class="mission-card">
             <div class="card-image">
-              <img src="img/about-us1.JPG">
+              <img src="./landing-page-img/RAW01137 (1).jpg">
               <!-- <div class="card-overlay">
                             <i class="fas fa-bullseye card-icon"></i>
                         </div> -->
@@ -1106,9 +1150,7 @@
           <!-- Vision Card -->
           <div class="vision-card">
             <div class="card-image">
-              <img
-                src="img/about2.jpg"
-                alt="Our Vision">
+              <img src="img/about2.jpg" alt="Our Vision">
 
             </div>
             <div class="card-content">
@@ -1597,7 +1639,7 @@
 
       <div class="section-header">
         <div class="section-badge">
-          <span>✦</span> Quality That Never Compromises
+          Quality That Never Compromises
         </div>
         <h1 class="section-title">The Foundation of
           <span class="highlight">Our Excellence</span>
@@ -1613,7 +1655,7 @@
           <div class="icon-wrapper">
             <div class="icon-bg"></div>
             <div class="icon-content">
-              <img src="https://cdn-icons-png.freepik.com/512/5726/5726297.png" alt="">
+              <img src="https://static.thenounproject.com/png/precision-icon-7861599-512.png" alt="">
             </div>
           </div>
           <span class="card-label">Our Philosophy</span>
@@ -1631,7 +1673,7 @@
           <div class="icon-wrapper">
             <div class="icon-bg"></div>
             <div class="icon-content">
-              <img src="https://cdn-icons-png.flaticon.com/256/1892/1892655.png" alt="">
+              <img src="https://cdn-icons-png.flaticon.com/256/1433/1433114.png" alt="">
             </div>
           </div>
           <span class="card-label">Our Approach</span>
@@ -1650,7 +1692,7 @@
           <div class="icon-wrapper">
             <div class="icon-bg"></div>
             <div class="icon-content">
-              <img src="https://cdn-icons-png.freepik.com/256/12335/12335691.png?semt=ais_white_label" alt="">
+              <img src="https://cdn-icons-png.flaticon.com/256/1337/1337232.png" alt="">
             </div>
           </div>
           <span class="card-label">Our Promise</span>
@@ -1734,8 +1776,8 @@
           <!-- LEFT CONTENT -->
 
 
-          <h1 class="" style="  text-align: center; color: white;  font-weight: 700;  margin-bottom: 75px;">The
-            Foundation of Our Excellence</h1>
+          <h1 class="" style="  text-align: center; color: white;  font-weight: 700;  margin-bottom: 75px;">Our
+            Facilities: At a Glance</h1>
 
 
           <!-- RIGHT CARDS -->
@@ -1743,13 +1785,13 @@
             <div class="row">
               <!-- CARD 1 -->
               <div class="col-md-4 col-sm-6 mb-4">
-                <div class="industry-card wow animate__animated animate__fadeInRight" data-wow-delay="100ms">
-                  <span class="industry-badge">FIFO Industry</span>
-                  <img src="img/bg/fifo-industry.JPG" alt="FIFO Industry" class="img-fluid" />
+                <div class="industry-card  ">
+                  <span class="industry-badge">FIFO INDUSTRIES</span>
+                  <img src="img/DSC02363 (1).JPG" alt="FIFO Industry" class="img-fluid" />
 
                   <p>
                     Precision Mould Manufacturing Unit<br />
-                    <b>Bhosari</b>
+                    <b>Bhosari </b>
                   </p>
                 </div>
 
@@ -1757,9 +1799,9 @@
 
               <!-- CARD 2 -->
               <div class="col-md-4 col-sm-6 mb-4">
-                <div class="industry-card wow animate__animated animate__fadeInRight" data-wow-delay="200ms">
-                  <span class="industry-badge">3D Polymer</span>
-                  <img src="img/bg/3d-polymer.JPG" alt="3D Polymer" class="img-fluid" />
+                <div class="industry-card ">
+                  <span class="industry-badge">FIFO POLYMERS</span>
+                  <img src="img/about-expertise.JPG" alt="3D Polymer" class="img-fluid" />
 
                   <p>
                     Plastic Injection Molding Unit <br />
@@ -1770,12 +1812,12 @@
 
               <!-- CARD 3 -->
               <div class="col-md-4 col-sm-6 mb-4">
-                <div class="industry-card wow animate__animated animate__fadeInRight" data-wow-delay="300ms">
+                <div class="industry-card ">
                   <span class="industry-badge">FIFO Engineering</span>
-                  <img src="img/bg/fifo-eng.jpg" alt="fifo-eng" class="img-fluid" />
+                  <img src="img/vlcsnap-2026-01-24-13h27m30s963.png" alt="fifo-eng" class="img-fluid" />
                   <!-- <h5 class="mt-3"><a href="">FIFO Engineering</a></h5> -->
                   <p>
-                    Heavy engineering Fabrication Unit <br />
+                    Heavy Engineering Fabrication Unit <br />
                     <b>Bhosari</b>
                   </p>
                 </div>
@@ -1786,14 +1828,7 @@
       </div>
     </section>
 
-<style>
-  @media (max-width: 768px) {
-  .brand {
-    display: none;
-  }
-}
 
-</style>
 
 
     <section class="brand">
@@ -1802,111 +1837,163 @@
 
       <div class="section-header">
         <div class="section-badge">
-          <span>✦</span> Our Brand Stands For
+           Our Brand Stands For
         </div>
-        <h1 class="section-title">Powering Modern
+        <h1 class="section-title" style="margin-bottom: 0px;">Powering Modern
 
           <span class="highlight">Manufacturing.</span>
         </h1>
       </div>
+      <section class="values-section">
+  <div class="values-container">
 
+    <div class="value-card light">
+      <img src="./landing-page-img/icons/target.png" class="icon-img" alt="Precision">
+      <h4 >Precision</h4>
+      <p>Every detail engineered with care</p>
+    </div>
 
-      <div class="container wow animate__animated animate__fadeInUp">
-        <div class="card_wrapper1">
-          <div class="card-wrapper">
-            <div class="creative-card card-1" >
-              <div class="card-icon-wrapper" >
-                <div class="card-icon">
-                  <img style="height: 60px" src="img/icon/target.png" alt="" />
-                </div>
-              </div>
-              <h3 class="card-titlee">Precision</h3>
-              <p class="card-descriptionn">
-                Every detail engineered with care
-              </p>
-            </div>
-          </div>
+    <div class="value-card dark">
+      <img src="landing-page-img/icons/badge.png" class="icon-img white-icon" alt="Quality">
+      <h4 style="color: white;">Quality</h4>
+      <p style="color: white;">Built to last, built to perform</p>
+    </div>
 
-          <div class="card-wrapper">
-            <div class="creative-card card-2">
-              <div class="card-icon-wrapper">
-                <div class="card-icon">
-                  <img style="height: 60px" src="img/icon/quality.png" alt="" />
-                </div>
-              </div>
-              <h3 class="card-titlee">Quality</h3>
-              <p class="card-descriptionn">Built to last, built to perform</p>
-            </div>
-          </div>
+    <div class="value-card light">
+      <img src="landing-page-img/icons/secure-shield.png" class="icon-img" alt="Reliability">
+      <h4>Reliability</h4>
+      <p>On-time delivery, every time</p>
+    </div>
 
-          <div class="card-wrapper">
-            <div class="creative-card card-3">
-              <div class="card-icon-wrapper">
-                <div class="card-icon">
-                  <img style="height: 60px" src="https://cdn-icons-png.flaticon.com/512/5063/5063056.png" alt="" />
-                </div>
-              </div>
-              <h3 class="card-titlee">Reliability</h3>
-              <p class="card-descriptionn">On-time delivery, every time</p>
-            </div>
-          </div>
-          <div class="card-wrapper">
-            <div class="creative-card card-4">
-              <div class="card-icon-wrapper">
-                <div class="card-icon">
-                  <img style="height: 60px" src="img/icon/innovation1.png" alt="" />
-                </div>
-              </div>
-              <h3 class="card-titlee">Innovation</h3>
-              <p class="card-descriptionn">Modern tools, modern thinking</p>
-            </div>
-          </div>
-          <div class="card-wrapper">
-            <div class="creative-card card-5">
-              <div class="card-icon-wrapper">
-                <div class="card-icon">
-                  <img style="height: 60px" src="img/icon/collaboration1.png" alt="" />
-                </div>
-              </div>
-              <h3 class="card-titlee">Collaboration</h3>
-              <p class="card-descriptionn">A partner, not just a supplier</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="value-card dark">
+      <img src="landing-page-img/icons/project-management.png" class="icon-img white-icon" alt="Innovation">
+      <h4 style="color: white;">Innovation</h4>
+      <p style="color: white;">Modern tools, modern thinking</p>
+    </div>
+
+    <div class="value-card light">
+      <img src="landing-page-img/icons/collaboration.png" class="icon-img" alt="Collaboration">
+      <h4>Collaboration</h4>
+      <p>A partner, not just a supplier</p>
+    </div>
+
+  </div>
+</section>
+
+      
+
+     
     </section>
+
+
+
+
+
+
+<style>
+  .values-section {
+  padding: 60px 20px;
+  background: #f7f9fc;
+}
+
+.values-container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.value-card {
+  border-radius: 14px;
+  padding: 32px 30px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.12);
+}
+
+/* Light card */
+.value-card.light {
+  background: #e0e9f6;
+  color: #092968 !important;
+}
+
+/* Dark card */
+.value-card.dark {
+  background: #0D3B82;
+  color: #ffffff;
+}
+
+/* Icon styling */
+.icon-img {
+  /* width: 42px; */
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+/* 🔥 makes PNG white on dark cards */
+.white-icon {
+  filter: brightness(0) invert(1);
+}
+
+.value-card h4 {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.value-card p {
+  font-size: 16px;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .values-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .values-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .values-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
 
 
   </main>
   <!-- main-area-end -->
   <!-- footer -->
-  <footer class="footer bg-light text-dark pt-5">
+   <footer class="footer bg-light text-dark pt-5">
     <div class="container">
       <div class="row">
         <!-- Logo & Description -->
         <div class="col-md-3 mb-4">
           <img src="img/logo/fifo-logo-footer.png" alt="FD Group Logo" class="mb-3 footer-logo" />
 
-          <!-- <div class="social-icons">
-              <a href="#" class="btn btn-outline-dark btn-sm rounded-0 mr-2"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" class="btn btn-outline-dark btn-sm rounded-0 mr-2"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="btn btn-outline-dark btn-sm rounded-0 mr-2"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div> -->
+         
         </div>
 
         <!-- Services -->
         <div class="col-md-3 mb-4">
           <h6 class="text-uppercase font-weight-bold mb-3">Our Services</h6>
           <ul class="list-unstyled">
-            <li><a href="">FIFO Engineering</a></li>
-            <li><a href="#">FIFO Industries</a></li>
-            <li><a href="#">3D Polymer</a></li>
+            <li><a href="./fifo-engineering/index.html">FIFO Engineering</a></li>
+            <li><a href="./fifo-industries/index.html">FIFO Industries</a></li>
+            <li><a href="./3d-polymer/index.html">FIFO Polymer</a></li>
           </ul>
         </div>
 
@@ -1929,11 +2016,10 @@
             S-Block 147, Bhosari, MIDC Pune-411039
           </p>
           <p style="color: white">
-            <i class="fas fa-phone-alt mr-2" style="color: #fff"></i>0113
-            2305566 (Hotline)
+            <i class="fas fa-phone-alt mr-2" style="color: #fff"></i>  +91 8482836581
           </p>
           <p style="color: white">
-            <i class="fas fa-envelope mr-2" style="color: #fff"></i>info@fdgroup.com
+            <i class="fas fa-envelope mr-2" style="color: #fff"></i>director@fdgroup.in
           </p>
         </div>
       </div>

@@ -1143,7 +1143,7 @@ textarea {
 .breadcrumb__bg {
   background-size: cover;
   background-position: center;
-  padding: 200px 0 90px;
+  padding: 260px 0 90px;
   position: relative;
   z-index: 1;
 }
@@ -1176,7 +1176,7 @@ textarea {
   height: 100%;
   z-index: -1;
   pointer-events: none;
-  background: linear-gradient(90deg, #02082c9d 25.96%, rgba(2, 12, 64, 0.79) 100%);
+  background: linear-gradient(90deg, #02082c96 25.96%, rgb(2 12 64 / 20%) 100%);
 }
 .breadcrumb__content .title {
   margin-bottom: 30px;
@@ -3189,7 +3189,7 @@ textarea {
 .slider__content .title {
   margin-bottom: 12px;
   color: var(--tg-color-white-default);
-  font-size: 55px;
+  font-size: 53px;
 }
 @media (max-width: 1500px) {
   .slider__content .title {
@@ -4581,7 +4581,7 @@ textarea {
   text-transform: capitalize;
   color: var(--tg-heading-color);
   border: none;
-  padding: 18px 30px;
+  padding: 18px 13px;
 }
 .about__tab-wrap .accordion-button::after {
   display: none;
@@ -4595,7 +4595,7 @@ textarea {
   box-shadow: none;
 }
 .about__tab-wrap .accordion-body {
-  padding: 0 30px 25px;
+  padding: 0 15px 25px;
 }
 .about__tab-wrap .accordion-body p {
   margin-bottom: 0;
@@ -5211,7 +5211,7 @@ textarea {
 .services__item {
   background: var(--tg-color-white-default);
   position: relative;
-  padding: 35px 40px;
+  padding: 30px 40px;
   -webkit-border-radius: 24px;
   -moz-border-radius: 24px;
   -o-border-radius: 24px;
@@ -5349,10 +5349,10 @@ textarea {
 }
 .services__content p {
   /* margin-bottom: 23px; */
-  padding-bottom: 23px;
+  /* padding-bottom: 23px; */
   font-weight: 500;
   text-transform: capitalize;
-  border-bottom: 1px solid var(--tg-border-2);
+  /* border-bottom: 1px solid var(--tg-border-2); */
 }
 .services__content-two .title {
   margin-bottom: 18px;

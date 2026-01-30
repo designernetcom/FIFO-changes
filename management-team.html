@@ -34,11 +34,11 @@
   </head>
   <body>
     <!-- header -->
- <header>
+  <header>
     <nav class="navbar navbar-expand-lg fixed-top navbar-light">
       <div class="container">
         <!-- LOGO -->
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a class="navbar-brand d-flex align-items-center" href="./index.html">
           <img src="img/logo/fifo-new-logo.png" width="60" class="mr-2" />
           <span class="font-weight-bold">FD GROUP</span>
         </a>
@@ -58,27 +58,28 @@
             <!-- DROPDOWN -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" data-toggle="dropdown">
-                About
+                About Us
               </a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="about.html">Company Background</a>
                 <a class="dropdown-item" href="management-team.html">Management Team</a>
-                <a class="dropdown-item" href="#">Quality & Certification</a>
-                <a class="dropdown-item" href="#">Locations</a>
+                <!-- <a class="dropdown-item" href="#">Quality & Certification</a>
+                <a class="dropdown-item" href="#">Locations</a> -->
               </div>
             </li>
 
             <li class="nav-item">
               <a class="nav-link" href="./fifo-engineering/index.html">FIFO Engineering</a>
             </li>
-
+            <li class="nav-item">
+              <a class="nav-link" href="./3d-polymer/index.html">FIFO
+                Polymers</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="./fifo-industries/index.html">FIFO Industries</a>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="./3d-polymer/index.html">3D Polymer</a>
-            </li>
+
 
             <li class="nav-item">
               <a class="nav-link" href="our-market.html">Our Market</a>
@@ -96,7 +97,7 @@
     <!-- main-area -->
     <main>
       <!-- breadcrumb-area -->
-      <section
+      <!-- <section
         class="breadcrumb-area d-flex align-items-center"
         style="
           background: linear-gradient(rgb(9 41 104 / 86%)),
@@ -114,8 +115,117 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- breadcrumb-area-end -->
+
+
+      <section class="feature-section">
+  <div class="feature-overlay"></div>
+
+  <div class="feature-content">
+    <span class="feature-label">Engineering Excellence, Built In-House</span>
+
+    <h2 class="feature-title">
+    Precision & Power Behind FD Group
+    </h2>
+
+    <p class="feature-text">
+    Backed by 45+ skilled engineers and advanced in-house manufacturing capabilities, FD Group delivers high-performance moulds through precision engineering, certified processes, and complete end-to-end control.
+    </p>
+  </div>
+
+  <!-- Bottom Curve -->
+
+</section>
+<style>
+  .feature-section {
+  position: relative;
+  width: 100%;
+  min-height: 520px;
+  background: url("https://dpc.co.uk/wp-content/uploads/2025/07/turning-milling-header_1.png") center  / cover no-repeat;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.feature-overlay {
+  position: absolute;
+  inset: 0;
+ 
+  z-index: 1;
+}
+
+.feature-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 100px 80px;
+}
+
+.feature-label {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #e63946;
+  text-transform: uppercase;
+}
+
+.feature-title {
+  font-size: 52px;
+  line-height: 1.15;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+.feature-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #d1d5db;
+  max-width: 520px;
+}
+
+.feature-curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.feature-curve svg {
+  display: block;
+  width: 100%;
+  height: 120px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 992px) {
+  .feature-content {
+    padding: 80px 40px;
+  }
+
+  .feature-title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .feature-section {
+    min-height: auto;
+  }
+
+  .feature-content {
+    padding: 70px 24px;
+  }
+
+  .feature-title {
+    font-size: 32px;
+  }
+}
+
+</style>
 
       <section class="about-news-section">
         <div class="container">
@@ -200,7 +310,7 @@
         </div>
       </section>
 
-      <section class="about-news-section py-5">
+      <section class="about-news-section py-5" style="margin-top: 0px !important;">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6 order-2 order-lg-1">
@@ -245,20 +355,11 @@
                     </div>
                   </div>
 
-                  <!-- NEWS CARD 2 -->
-                  <!-- <div class="col-md-6 mb-4">
-                    <div class="news-card">
-                      <ul class="feature-list">
-                        <li>CNC milling & grinding</li>
-                        <li>Polishing machines</li>
-                        <li>Precision lathe & tapping machines</li>
-                      </ul>
-                    </div>
-                  </div> -->
+                
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 pr-lg-5 mb-lg-0 order-1 order-lg-2">
+            <div class="col-lg-6 pr-lg-5 mb-lg-0 order-1 order-lg-2" >
               <h1 class="main-title">
                 <span
                   >Why FD Group is your <br />
@@ -282,74 +383,58 @@
     </main>
     <!-- main-area-end -->
     <!-- footer -->
-    <footer class="footer bg-light text-dark pt-5">
-      <div class="container">
-        <div class="row">
-          <!-- Logo & Description -->
-          <div class="col-md-3 mb-4">
-            <img
-              src="img/logo/fifo-logo-footer.png"
-              alt="FD Group Logo"
-              class="mb-3 footer-logo"
-            />
+   <footer class="footer bg-light text-dark pt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Logo & Description -->
+        <div class="col-md-3 mb-4">
+          <img src="img/logo/fifo-logo-footer.png" alt="FD Group Logo" class="mb-3 footer-logo" />
 
-            <!-- <div class="social-icons">
-              <a href="#" class="btn btn-outline-dark btn-sm rounded-0 mr-2"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" class="btn btn-outline-dark btn-sm rounded-0 mr-2"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" class="btn btn-outline-dark btn-sm rounded-0 mr-2"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-            </div> -->
-          </div>
-
-          <!-- Services -->
-          <div class="col-md-3 mb-4">
-            <h6 class="text-uppercase font-weight-bold mb-3">Our Services</h6>
-            <ul class="list-unstyled">
-              <li><a href="">FIFO Engineering</a></li>
-              <li><a href="#">FIFO Industries</a></li>
-              <li><a href="#">3D Polymer</a></li>
-            </ul>
-          </div>
-
-          <!-- Quick Links -->
-          <div class="col-md-3 mb-4">
-            <h6 class="text-uppercase font-weight-bold mb-3">Quick Links</h6>
-            <ul class="list-unstyled">
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="our-market.html">Our Market</a></li>
-
-              <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-          </div>
-
-          <!-- Contact Info -->
-          <div class="col-md-3 mb-4">
-            <h6 class="text-uppercase font-weight-bold mb-3">Contact</h6>
-            <p style="color: white">
-              <i class="fas fa-map-marker-alt mr-2" style="color: white"></i>
-              S-Block 147, Bhosari, MIDC Pune-411039
-            </p>
-            <p style="color: white">
-              <i class="fas fa-phone-alt mr-2" style="color: #fff"></i>0113
-              2305566 (Hotline)
-            </p>
-            <p style="color: white">
-              <i class="fas fa-envelope mr-2" style="color: #fff"></i
-              >info@fdgroup.com
-            </p>
-          </div>
+         
         </div>
 
-        <!-- <div class="text-center">
+        <!-- Services -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase font-weight-bold mb-3">Our Services</h6>
+          <ul class="list-unstyled">
+            <li><a href="./fifo-engineering/index.html">FIFO Engineering</a></li>
+            <li><a href="./fifo-industries/index.html">FIFO Industries</a></li>
+            <li><a href="./3d-polymer/index.html">FIFO Polymer</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase font-weight-bold mb-3">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="our-market.html">Our Market</a></li>
+
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-md-3 mb-4">
+          <h6 class="text-uppercase font-weight-bold mb-3">Contact</h6>
+          <p style="color: white">
+            <i class="fas fa-map-marker-alt mr-2" style="color: white"></i>
+            S-Block 147, Bhosari, MIDC Pune-411039
+          </p>
+          <p style="color: white">
+            <i class="fas fa-phone-alt mr-2" style="color: #fff"></i>  +91 8482836581
+          </p>
+          <p style="color: white">
+            <i class="fas fa-envelope mr-2" style="color: #fff"></i>director@fdgroup.in
+          </p>
+        </div>
+      </div>
+
+      <!-- <div class="text-center">
           <p class="mb-0">© 2025 FD GROUP. All Rights Reserved.</p>
         </div> -->
-      </div>
-    </footer>
+    </div>
+  </footer>
     <div class="container">
       <div class="copyright-wrap">
         <div class="container">
